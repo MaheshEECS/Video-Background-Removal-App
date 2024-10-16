@@ -99,12 +99,6 @@ The project requires the following Python libraries, which are listed in `requir
 
 Additionally, you will need to have FFmpeg installed on your machine.
 
-## Example Screenshots
-
-| ![Home Screen](https://via.placeholder.com/300x200) | ![Processing](https://via.placeholder.com/300x200) |
-|-----------------------------------------------------|----------------------------------------------------|
-| Home Screen                                         | Processing Video                                   |
-
 ## Known Issues
 
 - Processing long videos might take a significant amount of time depending on the hardware used.
