@@ -43,6 +43,13 @@ The processed video is outputted with the original audio intact.
       ```
     - **Windows**:
       - Download from [here](https://ffmpeg.org/download.html) and follow the instructions.
+    - **macOS** (via Homebrew):
+      First, install Homebrew (if not already installed):
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      Once Homebrew is installed, update it:
+      brew update
+
+
 
 4. Run the application:
     ```bash
