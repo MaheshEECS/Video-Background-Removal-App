@@ -58,7 +58,7 @@ The processed video is outputted with the original audio intact.
     ```bash
     streamlit run app.py 
     ```
- For Manually Adjusting  threshold setting for more preciseness:
+   For Manually Adjusting  threshold setting for more preciseness
     ```bash
     streamlit run Media.py 
     ```
