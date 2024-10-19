@@ -53,13 +53,15 @@ The processed video is outputted with the original audio intact.
 
       ```
     
-
-
 4. Run the application:
+   For autothreshold
     ```bash
-    streamlit run app.py
+    streamlit run app.py 
     ```
-
+ For Manually Adjusting  threshold setting for more preciseness 
+    ```bash
+    streamlit run Media.py 
+    ```
 ## Usage
 
 1. Open the app in your browser at the displayed local URL (usually `http://localhost:8501`).
@@ -89,11 +91,20 @@ The processed video is outputted with the original audio intact.
 - `combine_audio_video(video_path, audio_path, output_path)`: Combines the processed video with the extracted audio.
 - `remove_background(...)`: Handles background removal based on user selection (solid color, image, or transparent).
 
+## Threshold Setting
+
+The **threshold** parameter (ranging from **0.0** to **1.0**) is used to control the segmentation of the foreground and background in the video. 
+
+- **Values close to 0.0** will classify more pixels as part of the foreground, which can capture more detail of the subject but may include some background noise.
+- **Values close to 1.0** will be stricter, ensuring only the most certain pixels are included in the foreground, resulting in cleaner outputs but potentially clipping parts of the subject.
+
+Adjusting the threshold allows users to fine-tune the balance between foreground retention and background exclusion based on the specific characteristics of the video content.
+
 ## File Structure
 
 ```bash
-.
-├── app.py                       # Main application file
+├──Media.py                     #Main application file with threshold range
+├── app.py                      # Main application file
 ├── requirements.txt             # Python dependencies
 ├── README.md                    # Documentation (this file)
 └── assets/                      # Optional: store example videos or images for demos
