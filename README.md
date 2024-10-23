@@ -1,4 +1,6 @@
 # Video Background Removal App
+[Background Removal App](https://backgroundremovalapp.streamlit.app/)
+
 
 This is a Streamlit-based web application that allows users to upload a video, remove its background, and keep the audio. The app provides three background options:
 - **Solid Color**: Replace the background with a solid color.
